@@ -14,11 +14,13 @@ int main (void)
 {
   int number;
 	/* IMPLEMENT ME: Insert your algorithm here */
+  while(number != 4) {
   printf("Operand 'a':6|Operand 'b': 3\n");
   printf("Specify the operation to perform (0 : add | 1 : subtract | 2 : Multiply | 3 : divide | 4 : exit):");
   scanf("%d", &number);
   int result = operations[number](6, 3);
   printf("X = %d\n", result);
+  }
   
 	return 0;
 }
